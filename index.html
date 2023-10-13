@@ -24,26 +24,28 @@
                         <p>Let's do this!</p>
                         <div class="form-row">
                             <label for="first-name">First Name
-                                <input type="text" id="first-name" name="first-name" required>
+                                <input type="text" id="first-name" name="first-name" placeholder="" minlength="1" required>
                             </label>
                             <label for="last-name">Last Name
-                                <input type="text" id="last-name" name="last-name">
+                                <input type="text" id="last-name" name="last-name" pattern="^[A-Za-z]+$" placeholder="" minlength="1" required>
                             </label>
                         </div>
                         <div class="form-row">
                             <label for="email">Email
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" placeholder="" required>
                             </label>
                             <label for="phone">Phone Number
-                                <input type="tel" id="phone" name="phone">
+                                <input type="tel" id="phone" name="phone" placeholder="">
                             </label>
                         </div>
                         <div class="form-row">
                             <label for="pwd">Password
-                                <input type="password" id="pwd" name="password">
+                                <input type="password" class="error" id="pwd" name="password" placeholder="" minlength="8" required>
+                                <p></p>
                             </label>
                             <label for="pwd-confirm">Confirm Password
-                                <input type="password" id="pwd-confirm" name="password-confirm">
+                                <input type="password" class="error" id="pwd-confirm" name="password-confirm" placeholder="" minlength="8" required>
+                                <p></p>
                             </label>     
                         </div>
                     </section>
